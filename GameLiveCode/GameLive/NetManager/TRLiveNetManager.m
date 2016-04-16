@@ -15,9 +15,9 @@
 {
     return [self GET:@"http://www.quanmin.tv/json/page/ad-slot/info.json" parameters:nil progress:nil completionHandler:^(id responseObj, NSError *error) {
        
-        TextModel *model = [TextModel modelWithJSON:responseObj];
+        //TextModel *model = [TextModel modelWithJSON:responseObj];
         
-        !completionHandler ?: completionHandler(model,error);
+        !completionHandler ?: completionHandler([VideoModel parseJSON:responseObj],error);
     }];
 }
 
@@ -25,8 +25,8 @@
 {
     return [self GET:@"http://c.m.163.com/nc/video/home/1-10.html" parameters:nil progress:nil completionHandler:^(id responseObj, NSError *error) {
         
-        VideoModel *model = [VideoModel modelWithJSON:responseObj];
-        !completionHandler ?: completionHandler(model,error);
+       // VideoModel *model = [VideoModel modelWithJSON:responseObj];
+        !completionHandler ?: completionHandler([VideoModel parseJSON:responseObj],error);
     }];
 }
 
@@ -41,10 +41,21 @@
 //        }
         
         /** modelArrayWithClass 这个方法是YYModel提供的  */
-        NSArray<CategoryModel *> *tmpArr = [NSArray modelArrayWithClass:[CategoryModel class] json:responseObj];
+       // NSArray<CategoryModel *> *tmpArr = [NSArray modelArrayWithClass:[CategoryModel class] json:responseObj];
         
         /** 空和运算符 前方表达式为空 执行后面的语句 */
-        !completionHandler ?: completionHandler(tmpArr,error);
+        !completionHandler ?: completionHandler([CategoryModel parseJSON:responseObj],error);
     }];
 }
+
+/*
+ 模块化:MVVM MVC 写代码更加舒服 一样的东西写在一起 只留出一个接口 代码耦合性低
+ 自动化:把人的思考转化成电脑思考，把人要做的教给电脑做
+*/
+
+
+
+
+
+
 @end

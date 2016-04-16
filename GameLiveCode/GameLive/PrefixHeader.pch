@@ -10,7 +10,7 @@
 #define PrefixHeader_pch
 
 /** 头文件顺序也有讲究 程序编译也是有顺序的 */
-
+/** 通过pods导入的第三方库 需要<> 导入 */
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
@@ -41,6 +41,8 @@
 #import <YYKit.h>
 
 #import "NSObject+NetWorking.h"
+
+#import "NSObject+Parse.h"
 
 
 #endif /* PrefixHeader_pch */

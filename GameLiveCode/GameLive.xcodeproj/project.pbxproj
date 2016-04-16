@@ -13,6 +13,8 @@
 		384A2C571CB2CA2900975B26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384A2C551CB2CA2900975B26 /* Main.storyboard */; };
 		384A2C591CB2CA2900975B26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384A2C581CB2CA2900975B26 /* Assets.xcassets */; };
 		384A2C5C1CB2CA2900975B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384A2C5A1CB2CA2900975B26 /* LaunchScreen.storyboard */; };
+		842A581B1CC2898B004271B5 /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A581A1CC2898B004271B5 /* NSObject+Parse.m */; };
+		842A581E1CC290C3004271B5 /* CategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A581D1CC290C3004271B5 /* CategoryViewModel.m */; };
 		848C57791CC1261D009F4144 /* AppDelegate+System.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C57781CC1261D009F4144 /* AppDelegate+System.m */; };
 		848C577C1CC127B5009F4144 /* AppDelegate+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C577B1CC127B5009F4144 /* AppDelegate+Custom.m */; };
 		96E38A7CE08848CBDFC84CBB /* libPods-GameLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC474E3D2809CA4D1F22485 /* libPods-GameLive.a */; };
@@ -36,6 +38,10 @@
 		384A2C5B1CB2CA2900975B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		384A2C5D1CB2CA2900975B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		510E4EA8A486C0D549BDE167 /* Pods-GameLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameLive/Pods-GameLive.release.xcconfig"; sourceTree = "<group>"; };
+		842A58191CC2898B004271B5 /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
+		842A581A1CC2898B004271B5 /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
+		842A581C1CC290C3004271B5 /* CategoryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryViewModel.h; path = GameLive/Category/CategoryViewModel.h; sourceTree = SOURCE_ROOT; };
+		842A581D1CC290C3004271B5 /* CategoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryViewModel.m; path = GameLive/Category/CategoryViewModel.m; sourceTree = SOURCE_ROOT; };
 		848C57761CC12284009F4144 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		848C57771CC1261D009F4144 /* AppDelegate+System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+System.h"; sourceTree = "<group>"; };
 		848C57781CC1261D009F4144 /* AppDelegate+System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+System.m"; sourceTree = "<group>"; };
@@ -128,6 +134,8 @@
 				C71DB6501CC2060F00A01FFB /* UIView+HUD.m */,
 				C71DB6551CC21AE800A01FFB /* NSObject+NetWorking.h */,
 				C71DB6561CC21AE800A01FFB /* NSObject+NetWorking.m */,
+				842A58191CC2898B004271B5 /* NSObject+Parse.h */,
+				842A581A1CC2898B004271B5 /* NSObject+Parse.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -198,6 +206,8 @@
 		848C57751CC120C6009F4144 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				842A581C1CC290C3004271B5 /* CategoryViewModel.h */,
+				842A581D1CC290C3004271B5 /* CategoryViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -345,10 +355,12 @@
 				384A2C541CB2CA2900975B26 /* ViewController.m in Sources */,
 				384A2C511CB2CA2900975B26 /* AppDelegate.m in Sources */,
 				C71DB6571CC21AE800A01FFB /* NSObject+NetWorking.m in Sources */,
+				842A581E1CC290C3004271B5 /* CategoryViewModel.m in Sources */,
 				C71DB65A1CC2233E00A01FFB /* CategoryModel.m in Sources */,
 				C71DB6631CC2355A00A01FFB /* TextModel.m in Sources */,
 				384A2C4E1CB2CA2900975B26 /* main.m in Sources */,
 				848C57791CC1261D009F4144 /* AppDelegate+System.m in Sources */,
+				842A581B1CC2898B004271B5 /* NSObject+Parse.m in Sources */,
 				C71DB6541CC2135300A01FFB /* TRLiveNetManager.m in Sources */,
 				848C577C1CC127B5009F4144 /* AppDelegate+Custom.m in Sources */,
 			);
