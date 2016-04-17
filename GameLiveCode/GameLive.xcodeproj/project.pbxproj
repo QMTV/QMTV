@@ -24,6 +24,13 @@
 		C71DB65A1CC2233E00A01FFB /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C71DB6591CC2233E00A01FFB /* CategoryModel.m */; };
 		C71DB65D1CC22B5900A01FFB /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C71DB65C1CC22B5900A01FFB /* VideoModel.m */; };
 		C71DB6631CC2355A00A01FFB /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C71DB6621CC2355A00A01FFB /* TextModel.m */; };
+		C79989111CC34AB700C20552 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C799890F1CC34AB700C20552 /* CategoryCell.m */; };
+		C79989121CC34AB700C20552 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79989101CC34AB700C20552 /* CategoryCell.xib */; };
+		C79989151CC3570900C20552 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79989141CC3570900C20552 /* CategoryViewController.m */; };
+		C79989181CC3677900C20552 /* RoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C79989171CC3677900C20552 /* RoomModel.m */; };
+		C799891B1CC371CC00C20552 /* RoomViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C799891A1CC371CC00C20552 /* RoomViewModel.m */; };
+		C799891F1CC3818D00C20552 /* RoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C799891D1CC3818D00C20552 /* RoomCell.m */; };
+		C79989201CC3818D00C20552 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C799891E1CC3818D00C20552 /* RoomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +68,18 @@
 		C71DB65C1CC22B5900A01FFB /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		C71DB6611CC2355A00A01FFB /* TextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextModel.h; sourceTree = "<group>"; };
 		C71DB6621CC2355A00A01FFB /* TextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextModel.m; sourceTree = "<group>"; };
+		C799890E1CC34AB700C20552 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCell.h; sourceTree = "<group>"; };
+		C799890F1CC34AB700C20552 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCell.m; sourceTree = "<group>"; };
+		C79989101CC34AB700C20552 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		C79989131CC3570900C20552 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		C79989141CC3570900C20552 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		C79989161CC3677900C20552 /* RoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomModel.h; sourceTree = "<group>"; };
+		C79989171CC3677900C20552 /* RoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomModel.m; sourceTree = "<group>"; };
+		C79989191CC371CC00C20552 /* RoomViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomViewModel.h; sourceTree = "<group>"; };
+		C799891A1CC371CC00C20552 /* RoomViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomViewModel.m; sourceTree = "<group>"; };
+		C799891C1CC3818D00C20552 /* RoomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomCell.h; sourceTree = "<group>"; };
+		C799891D1CC3818D00C20552 /* RoomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomCell.m; sourceTree = "<group>"; };
+		C799891E1CC3818D00C20552 /* RoomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
 		EAC474E3D2809CA4D1F22485 /* libPods-GameLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GameLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -157,6 +176,8 @@
 				C71DB65C1CC22B5900A01FFB /* VideoModel.m */,
 				C71DB6611CC2355A00A01FFB /* TextModel.h */,
 				C71DB6621CC2355A00A01FFB /* TextModel.m */,
+				C79989161CC3677900C20552 /* RoomModel.h */,
+				C79989171CC3677900C20552 /* RoomModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +211,12 @@
 		848C57731CC120C6009F4144 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C799890E1CC34AB700C20552 /* CategoryCell.h */,
+				C799890F1CC34AB700C20552 /* CategoryCell.m */,
+				C79989101CC34AB700C20552 /* CategoryCell.xib */,
+				C799891C1CC3818D00C20552 /* RoomCell.h */,
+				C799891D1CC3818D00C20552 /* RoomCell.m */,
+				C799891E1CC3818D00C20552 /* RoomCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +226,8 @@
 			children = (
 				384A2C521CB2CA2900975B26 /* ViewController.h */,
 				384A2C531CB2CA2900975B26 /* ViewController.m */,
+				C79989131CC3570900C20552 /* CategoryViewController.h */,
+				C79989141CC3570900C20552 /* CategoryViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -208,6 +237,8 @@
 			children = (
 				842A581C1CC290C3004271B5 /* CategoryViewModel.h */,
 				842A581D1CC290C3004271B5 /* CategoryViewModel.m */,
+				C79989191CC371CC00C20552 /* RoomViewModel.h */,
+				C799891A1CC371CC00C20552 /* RoomViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -291,7 +322,9 @@
 			files = (
 				384A2C5C1CB2CA2900975B26 /* LaunchScreen.storyboard in Resources */,
 				384A2C591CB2CA2900975B26 /* Assets.xcassets in Resources */,
+				C79989201CC3818D00C20552 /* RoomCell.xib in Resources */,
 				384A2C571CB2CA2900975B26 /* Main.storyboard in Resources */,
+				C79989121CC34AB700C20552 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,14 +384,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C71DB6511CC2060F00A01FFB /* UIView+HUD.m in Sources */,
+				C799891B1CC371CC00C20552 /* RoomViewModel.m in Sources */,
+				C79989151CC3570900C20552 /* CategoryViewController.m in Sources */,
 				C71DB65D1CC22B5900A01FFB /* VideoModel.m in Sources */,
+				C799891F1CC3818D00C20552 /* RoomCell.m in Sources */,
 				384A2C541CB2CA2900975B26 /* ViewController.m in Sources */,
+				C79989181CC3677900C20552 /* RoomModel.m in Sources */,
 				384A2C511CB2CA2900975B26 /* AppDelegate.m in Sources */,
 				C71DB6571CC21AE800A01FFB /* NSObject+NetWorking.m in Sources */,
 				842A581E1CC290C3004271B5 /* CategoryViewModel.m in Sources */,
 				C71DB65A1CC2233E00A01FFB /* CategoryModel.m in Sources */,
 				C71DB6631CC2355A00A01FFB /* TextModel.m in Sources */,
 				384A2C4E1CB2CA2900975B26 /* main.m in Sources */,
+				C79989111CC34AB700C20552 /* CategoryCell.m in Sources */,
 				848C57791CC1261D009F4144 /* AppDelegate+System.m in Sources */,
 				842A581B1CC2898B004271B5 /* NSObject+Parse.m in Sources */,
 				C71DB6541CC2135300A01FFB /* TRLiveNetManager.m in Sources */,

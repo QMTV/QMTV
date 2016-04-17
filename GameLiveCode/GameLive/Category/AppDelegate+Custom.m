@@ -18,6 +18,14 @@
     /** 启动监听 */
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     
+    /** 统一配置 */
+    [UINavigationBar appearance].barTintColor = [UIColor redColor];
+    
+    /** 更改状态栏和标题颜色 */
+    [UINavigationBar appearance].barStyle = UIBarStyleBlackOpaque;
+    
+    /** 全局的所有的子视图标题高亮状态颜色 */
+    self.window.tintColor = [UIColor redColor];
 }
 - (AFNetworkReachabilityStatus)netStatus
 {

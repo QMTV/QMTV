@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RoomCell">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="130"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvx-Gv-FbQ">
+                        <rect key="frame" x="0.0" y="102" width="175" height="28"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="WCI-1t-0Qb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jT2-pr-p8B">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="102"/>
+                        <animations/>
+                    </imageView>
+                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9G-Q9-Hny">
+                        <rect key="frame" x="0.0" y="82" width="175" height="20"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="主播名" translatesAutoresizingMaskIntoConstraints="NO" id="tKL-2a-Mju" userLabel="主播">
+                                <rect key="frame" x="5" y="4" width="13" height="12"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="CO6-d5-LAh"/>
+                                    <constraint firstAttribute="width" constant="13" id="QAe-g7-PVO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNZ-nr-3Gl" userLabel="主播名">
+                                <rect key="frame" x="23" y="4" width="65" height="12"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="8pS-9X-YgD"/>
+                                    <constraint firstAttribute="height" constant="12" id="PgW-wr-5BK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户名" translatesAutoresizingMaskIntoConstraints="NO" id="Pqs-EK-lFF" userLabel="人数图标">
+                                <rect key="frame" x="118" y="4" width="13" height="12"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="DTW-bw-ZAE"/>
+                                    <constraint firstAttribute="height" constant="12" id="KC0-Wf-U6o"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999.9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5N7-8O-fMB">
+                                <rect key="frame" x="136" y="2" width="34" height="16"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="eSC-c9-8Ok"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tKL-2a-Mju" firstAttribute="leading" secondItem="n9G-Q9-Hny" secondAttribute="leading" constant="5" id="3MU-4D-box"/>
+                            <constraint firstItem="HNZ-nr-3Gl" firstAttribute="top" secondItem="n9G-Q9-Hny" secondAttribute="top" constant="4" id="6gj-rR-tig"/>
+                            <constraint firstAttribute="height" constant="20" id="6mb-PE-c07"/>
+                            <constraint firstAttribute="bottom" secondItem="5N7-8O-fMB" secondAttribute="bottom" constant="2" id="KGV-5i-qwj"/>
+                            <constraint firstItem="HNZ-nr-3Gl" firstAttribute="leading" secondItem="tKL-2a-Mju" secondAttribute="trailing" constant="5" id="YIc-N8-z9z"/>
+                            <constraint firstItem="tKL-2a-Mju" firstAttribute="top" secondItem="n9G-Q9-Hny" secondAttribute="top" constant="4" id="Zak-Ag-fPp"/>
+                            <constraint firstItem="5N7-8O-fMB" firstAttribute="top" secondItem="n9G-Q9-Hny" secondAttribute="top" constant="2" id="rOH-HN-bXt"/>
+                            <constraint firstItem="Pqs-EK-lFF" firstAttribute="top" secondItem="n9G-Q9-Hny" secondAttribute="top" constant="4" id="rvj-ir-hiZ"/>
+                            <constraint firstItem="5N7-8O-fMB" firstAttribute="leading" secondItem="Pqs-EK-lFF" secondAttribute="trailing" constant="5" id="xUe-MZ-ie1"/>
+                            <constraint firstAttribute="trailing" secondItem="5N7-8O-fMB" secondAttribute="trailing" constant="5" id="yLy-Cq-Vf6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hvx-Gv-FbQ" secondAttribute="trailing" id="16z-Ed-zEx"/>
+                <constraint firstAttribute="trailing" secondItem="jT2-pr-p8B" secondAttribute="trailing" id="6va-wW-qot"/>
+                <constraint firstItem="jT2-pr-p8B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PhT-6i-2Bc"/>
+                <constraint firstItem="n9G-Q9-Hny" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WGg-iT-cYy"/>
+                <constraint firstItem="Hvx-Gv-FbQ" firstAttribute="top" secondItem="n9G-Q9-Hny" secondAttribute="bottom" id="gA4-sg-3Az"/>
+                <constraint firstAttribute="trailing" secondItem="n9G-Q9-Hny" secondAttribute="trailing" id="m6N-UD-wnf"/>
+                <constraint firstItem="Hvx-Gv-FbQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="n9G-CK-Sby"/>
+                <constraint firstAttribute="bottom" secondItem="Hvx-Gv-FbQ" secondAttribute="bottom" id="nZZ-KK-DIa"/>
+                <constraint firstItem="Hvx-Gv-FbQ" firstAttribute="top" secondItem="jT2-pr-p8B" secondAttribute="bottom" id="s6v-tV-Ddd"/>
+                <constraint firstItem="jT2-pr-p8B" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ujL-qg-c7h"/>
+            </constraints>
+            <connections>
+                <outlet property="iconIV" destination="jT2-pr-p8B" id="W9l-kt-qSt"/>
+                <outlet property="nickLb" destination="tKL-2a-Mju" id="BM7-3Z-row"/>
+                <outlet property="titleLb" destination="Hvx-Gv-FbQ" id="qSg-Vj-MmS"/>
+                <outlet property="viewLb" destination="5N7-8O-fMB" id="bxd-uj-n14"/>
+            </connections>
+            <point key="canvasLocation" x="362.5" y="352"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="主播名" width="10" height="10"/>
+        <image name="用户名" width="20" height="20"/>
+    </resources>
+</document>

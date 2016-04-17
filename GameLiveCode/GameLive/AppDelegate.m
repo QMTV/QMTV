@@ -7,6 +7,8 @@
 //
 
 
+#import "TRLiveNetManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self setupGlobalConfig];
+    
+
+    [TRLiveNetManager getRoomListWithPage:4 completionHandler:^(RoomModel *model, NSError *error) {
+       
+        NSLog(@"...");
+    }];
     
     return YES;
 }

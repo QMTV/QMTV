@@ -23,6 +23,23 @@
  ...
  */
 
+#import "TRLiveNetManager.h"
+
 @interface CategoryViewModel : NSObject
+//UI
+//有多少个栏目（英雄联盟）
+@property (nonatomic,readonly) NSInteger rowNumber;
+//每个栏目的图片
+- (NSURL *)iconURLForIndex:(NSInteger)index;
+//每张图片的标题
+- (NSString *)titleForIndex:(NSInteger)index;
+
+
+//接口
+//存储所有栏目的数组
+@property (nonatomic) NSArray<CategoryModel *> *categories;
+//这个方法是在view调用的，不需要让view层指定model层的东西，所以block的参数不需要填model
+- (void)getDataCompletionHandler:(void(^)(NSError *error))completionHandler;
+
 
 @end

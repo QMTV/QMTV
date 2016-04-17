@@ -37,6 +37,23 @@
         [MBProgressHUD hideHUDForView:self animated:NO];
         
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
+        hud.mode = MBProgressHUDModeCustomView;
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 80, 80)];
+        NSArray *imageNames = @[@"00",@"01",@"02",@"03",@"04",@"05",@"06",@"07",@"08",@"09",@"10",@"11",];
+        NSMutableArray<UIImage *> *imgs = [NSMutableArray new];
+        
+        for (NSString *imageName in imageNames) {
+            [imgs addObject:[UIImage imageNamed:imageName]];
+        }
+        imageView.animationImages = imgs;
+        
+        hud.customView = imageView;
+        //所有图片转一轮的时间
+        imageView.animationDuration = 1.0;
+        //开始动画
+        [imageView startAnimating];
+        //hud的背景颜色
+        hud.color = [UIColor clearColor];
         [hud hide:YES afterDelay:kTimeOut];
     });
 }
