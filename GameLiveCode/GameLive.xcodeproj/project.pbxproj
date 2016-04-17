@@ -31,6 +31,7 @@
 		C799891B1CC371CC00C20552 /* RoomViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C799891A1CC371CC00C20552 /* RoomViewModel.m */; };
 		C799891F1CC3818D00C20552 /* RoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C799891D1CC3818D00C20552 /* RoomCell.m */; };
 		C79989201CC3818D00C20552 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C799891E1CC3818D00C20552 /* RoomCell.xib */; };
+		C79989261CC38B3D00C20552 /* RoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79989251CC38B3D00C20552 /* RoomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,8 @@
 		C799891C1CC3818D00C20552 /* RoomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomCell.h; sourceTree = "<group>"; };
 		C799891D1CC3818D00C20552 /* RoomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomCell.m; sourceTree = "<group>"; };
 		C799891E1CC3818D00C20552 /* RoomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
+		C79989241CC38B3D00C20552 /* RoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomViewController.h; sourceTree = "<group>"; };
+		C79989251CC38B3D00C20552 /* RoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomViewController.m; sourceTree = "<group>"; };
 		EAC474E3D2809CA4D1F22485 /* libPods-GameLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GameLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -228,6 +231,8 @@
 				384A2C531CB2CA2900975B26 /* ViewController.m */,
 				C79989131CC3570900C20552 /* CategoryViewController.h */,
 				C79989141CC3570900C20552 /* CategoryViewController.m */,
+				C79989241CC38B3D00C20552 /* RoomViewController.h */,
+				C79989251CC38B3D00C20552 /* RoomViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 				C799891F1CC3818D00C20552 /* RoomCell.m in Sources */,
 				384A2C541CB2CA2900975B26 /* ViewController.m in Sources */,
 				C79989181CC3677900C20552 /* RoomModel.m in Sources */,
+				C79989261CC38B3D00C20552 /* RoomViewController.m in Sources */,
 				384A2C511CB2CA2900975B26 /* AppDelegate.m in Sources */,
 				C71DB6571CC21AE800A01FFB /* NSObject+NetWorking.m in Sources */,
 				842A581E1CC290C3004271B5 /* CategoryViewModel.m in Sources */,
